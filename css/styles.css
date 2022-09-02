@@ -612,7 +612,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -4069,6 +4069,11 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+}
+.navbar-logo {
+  width: 75px; 
+  height: auto; 
+  top: 40px;
 }
 .navbar-nav {
   display: flex;
@@ -11491,6 +11496,17 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
+.test:hover {
+  transition: opacity 0.25s ease;
+  filter: invert(0) sepia(0) saturate(0.5) hue-rotate(0deg) brightness(0.5);
+}
+.test-caption {
+  opacity: 0;
+}
+.test:hover  .test-caption {
+  opacity: 1;
+}
+
 #header #header .container-sm, #header .container-md, #header .container-lg, #header .container-xl, #header .container-xxl,
 #gallery #gallery .container-sm, #gallery .container-md, #gallery .container-lg, #gallery .container-xl, #gallery .container-xxl {
   max-width: 1920px;
@@ -11499,6 +11515,10 @@ header.masthead h1, header.masthead .h1 {
 #gallery .info-box, #gallery .container-sm .info-box, #gallery .container-md .info-box, #gallery .container-lg .info-box, #gallery .container-xl .info-box, #gallery .container-xxl .info-box {
   position: relative;
   display: block;
+}
+#header .info-box:hover .logo {
+  transition: opacity 0.25s ease;
+  filter: invert(0) sepia(0) saturate(0.75) hue-rotate(0deg) brightness(0.5);
 }
 #header .info-box .info-box-caption, #header .container-sm .info-box .info-box-caption, #header .container-md .info-box .info-box-caption, #header .container-lg .info-box .info-box-caption, #header .container-xl .info-box .info-box-caption, #header .container-xxl .info-box .info-box-caption,
 #gallery .info-box .info-box-caption, #gallery .container-sm .info-box .info-box-caption, #gallery .container-md .info-box .info-box-caption, #gallery .container-lg .info-box .info-box-caption, #gallery .container-xl .info-box .info-box-caption, #gallery .container-xxl .info-box .info-box-caption {
@@ -11514,7 +11534,7 @@ header.masthead h1, header.masthead .h1 {
   opacity: 0;
   color: #fff;
   /* background: rgba(241, 3, 3, 0.8); */
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11760,4 +11780,22 @@ header ::-webkit-scrollbar-thumb {
 
 .game-result-black:hover {
   opacity: 1;
+}
+
+.text-footer-start {
+  text-align: start;
+}
+
+.text-footer-end {
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .text-footer-start {
+    text-align: center;
+  }
+  
+  .text-footer-end {
+    text-align: center;
+  }
 }

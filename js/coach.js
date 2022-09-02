@@ -1,27 +1,27 @@
 var coach = [{
     "firstName": "Martin",
     "lastName": "Sünkel",
-    "position": "QB Coach | Offensive Coordinator",
+    "position": "Quaterbacks \nOffensive Coordinator",
     "image": "sticker.png",
 },{
     "firstName": "Martin",
     "lastName": "Schneyer",
-    "position": "RB Coach",
+    "position": "Runningbacks",
     "image": "sticker.png",
 },{
     "firstName": "Tobias",
     "lastName": "Neubauer",
-    "position": "WR Coach",
+    "position": "Receiver, Tightends",
     "image": "sticker.png",
 },{
     "firstName": "Julian",
     "lastName": "Langbein",
-    "position": "Line Coach",
+    "position": "O-Line, D-Line",
     "image": "sticker.png",
 },{
     "firstName": "Niu",
     "lastName": "Niu",
-    "position": "LB/DB Coach | Defense Coordinator",
+    "position": "Linebacker, Defensivebacks \nDefense Coordinator",
     "image": "sticker.png",
 },
 ];

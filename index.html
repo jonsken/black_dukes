@@ -24,6 +24,8 @@
         <script src="https://kit.fontawesome.com/98371a8666.js" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v14.0" nonce="jFCYjdhw"></script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -43,21 +45,19 @@
 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
-                        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                        <li class="nav-item text-center" style="width: 150px;"><a class="nav-link" href="about.html">Über uns</a></li>
+                        <li class="nav-item text-center" style="width: 150px;"><a class="nav-link" href="team.html">Team</a></li>
                     </ul>
                 </div>
-                <div class="position-relative" style="width: 75px;">
-                    <div class="position-absolute" style="width: 75px; height: auto; top: -25px;">
-                        <a class="navbar-brand" href="index.html">
-                            <img class="img-fluid" src="./assets/img/navbar-logo.png">
-                        </a>
-                    </div>
+                <div class="position-absolute start-50 translate-middle navbar-logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid" src="./assets/img/navbar-logo.png">
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="schedule.html">Spielplan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsoren</a></li>
+                        <li class="nav-item text-center" style="width: 150px;"><a class="nav-link" href="schedule.html">Spielplan</a></li>
+                        <li class="nav-item text-center" style="width: 150px;"><a class="nav-link" href="sponsors.html">Sponsoren</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,27 +65,35 @@
         <!-- Masthead-->
         <header class="masthead bg-huddle d-flex justify-content-center align-items-center" id="header">
             <div class="d-flex">
-                <a class="info-box h-100 w-auto" href="about.html" title="Project Name">
-                    <img class="img-fluid" src="./assets/img/header/bg-d-alt.png">
+                <a class="info-box" href="about.html" title="Project Name">
+                    <img class="img-fluid logo" src="./assets/img/header/bg-d-alt.png">
                     <div class="info-box-caption">
                         <div class="project-category">Über uns</div>
                     </div>
                 </a>
                 <div>
                     <a class="info-box" href="schedule.html" title="Project Name">
-                        <img class="img-fluid" src="./assets/img/header/bg-veste.png">
+                        <img class="img-fluid logo" src="./assets/img/header/bg-veste.png">
                         <div class="info-box-caption">
                             <div class="project-category">Spielplan</div>
                         </div>
                     </a>
                     <a class="info-box" href="team.html" title="Project Name">
-                        <img class="img-fluid" src="./assets/img/header/bg-dukes-alt.png">
+                        <img class="img-fluid logo" src="./assets/img/header/bg-dukes-alt.png">
                         <div class="info-box-caption">
                             <div class="project-category">Team</div>
                         </div>
                     </a> 
                 </div>
             </div>
+            <!-- <div>
+                <a class="test h-100 w-auto" href="about.html" title="Project Name">
+                    <img class="img-fluid" src="./assets/img/header/bg-d.svg">
+                    <div class="test-caption">
+                        <div class="project-category">Über uns</div>
+                    </div>
+                </a>
+            </div> -->
         </header>
         <!-- Services-->
         <section class="page-section" id="services">
@@ -95,7 +103,7 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-5 col-md-6 text-center">
                         <a href="about.html">
-                            <img class="img-fit" src="./assets/img/team/entrance.jpg" >
+                            <img class="img-fit" src="./assets/img/team/entrance.jpg">
                         </a>
                     </div>
                     <div class="col-lg-7 col-md-6 text-justify">
@@ -109,7 +117,7 @@
         </section>
         <!-- About-->
         <!-- Image: https://www.pexels.com/de-de/foto/feld-gras-boden-linien-6578121/ -->
-        <section class="divider-marks" id="about"></section>
+        <section class="divider-marks" id="marks"></section>
         <!-- Practice-->
         <section class="page-section bg-light" id="practice">
             <div class="container">
@@ -123,7 +131,7 @@
                         <div class="my-lg-3 mt-3">
                             <h4>Training Senior Tackle:</h4>
                             <div class="mb-3">
-                                <i class="fa-solid fa-clock me-2"></i>Mo. & Do. 18:30 - 21:00 Uhr
+                                <i class="fa-solid fa-clock me-2"></i>Mo. & Mi. 18:30 - 21:00 Uhr
                                 <br><i class="fa-solid fa-location-dot me-2"></i>TV 1894 Coburg-Neuses, Friedrich-Ludwig-Jahn-Straße 11A, 96450 Coburg
                             </div>
                             <h4>Training Junior Tackle:</h4>
@@ -136,63 +144,29 @@
             </div>
         </section>
         <!-- Image: https://unsplash.com/photos/KSJVvxfBHLk21/ -->
-        <section class="page-section divider-sideline" id="about"></section>
-        <!-- Gallery-->
-        <section class="page-section bg-light" id="gallery">
-            <!-- <div class="img-gallery">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/1.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/2.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/3.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/4.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/5.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/6.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/7.jpg">
-                <img class="img-slider p-1" src="./assets/img/gallery/slideshow/8.jpg">
-            </div> -->
+        <section class="page-section divider-sideline" id="sideline"></section>
+        <!-- News-->
+        <section class="page-section bg-light" id="news">
             <div class="container">
-                <h2 class="text-center mt-0">Gallerie</h2>
+                <h2 class="text-center mt-0">News</h2>
                 <hr class="divider" />
-                <a class="info-box" href="gallery.html" title="Project Name">
-                    <div class="gallery">
-                        <figure class="gallery__item gallery__item--1">
-                            <img src="./assets/img/gallery/slideshow/2.jpg" alt="Gallery image 1" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--2">
-                            <img src="./assets/img/gallery/slideshow/1.jpg" alt="Gallery image 2" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--3">
-                            <img src="./assets/img/gallery/slideshow/3.jpg" alt="Gallery image 3" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--4">
-                            <img src="./assets/img/gallery/slideshow/4.jpg" alt="Gallery image 4" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--5">
-                            <img src="./assets/img/gallery/slideshow/5.jpg" alt="Gallery image 5" class="gallery__img">
-                        </figure>
-                        <figure class="gallery__item gallery__item--6">
-                            <img src="./assets/img/gallery/slideshow/6.jpg" alt="Gallery image 6" class="gallery__img">
-                        </figure>
+                <div class="row pb-3 pt-3 pr-3 pl-3">
+                    <!-- <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center"> -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="w-100">
+                            <div class="fb-page" data-href="https://www.facebook.com/coburgblackdukes" data-tabs="timeline, events, messages" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" lazy="true">
+                                <blockquote cite="https://www.facebook.com/coburgblackdukes" class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/coburgblackdukes">Coburg Black Dukes</a>
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info-box-caption">
-                        <div class="project-category">Gallery</div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <!-- Sponsors-->
-        <!-- <section class="page-section bg-light" id="sponsors">
-            <div class="container">
-                <h2 class="text-center mt-0">Sponsoren</h2>
-                <hr class="divider" />
-                <div class="img-sponsor">
-                    <img class="img-sponsor p-1" src="./assets/img/sponsor/1.jpg">
-                    <img class="img-sponsor p-1" src="./assets/img/sponsor/2.jpg">
-                    <img class="img-sponsor p-1" src="./assets/img/sponsor/3.jpg">
-                    <img class="img-sponsor p-1" src="./assets/img/sponsor/4.jpg">
-                    <img class="img-sponsor p-1" src="./assets/img/sponsor/5.jpg">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        
+                    </div>    
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Contact-->
         <section class="page-section bg-celebrate text-white" id="contact">
             <div class="container px-4 px-lg-5">
@@ -265,7 +239,16 @@
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div></div>
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="small text-footer-start text-muted">Copyright &copy; 2022 - Coburg Black Dukes</div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="small text-footer-end text-muted"><a class="a-not" href="imprint.html">Impressum</a></div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
